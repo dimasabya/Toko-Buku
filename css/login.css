@@ -63,3 +63,54 @@ button:hover {
 form .text {
     margin-top: .5rem;
 }
+
+.signup {
+    background-color: rgba(145, 114, 239, .7);
+    position: absolute;
+    z-index: -999;
+    padding: 1rem;
+    width: 20rem;
+    top: 170px;
+    left: 26.7rem;
+    gap: 20px;
+    opacity: 0;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.signup h2 {
+    margin-bottom: .9rem;
+}
+
+.signup .signup-form {
+    gap: .5rem;
+}
+
+.signup .signup-form button {
+    margin: .5rem auto;
+}
+
+.signup.feed {
+    opacity: 1;
+    z-index: 9999;
+}
+
+.continer.feed {
+    opacity: 0;
+}
+
+.signup a {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    opacity: 1;
+    color: white;
+}
+
+.signup .close:hover {
+    color: red;
+}
+
+.continer p .sign-btn~:checked.signup {
+    transform: scaleX(20);
+}
