@@ -1,0 +1,65 @@
+:root {
+    --bg: #ECF2FF;
+    --primary: #655DBB;
+    --secondary: #BFACE2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('/assets/images/baner/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+}
+
+.continer {
+    background-color: rgba(145, 114, 239, .7);
+    position: absolute;
+    top: 170px;
+    left: 35%;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 20rem;
+}
+
+.continer h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+    color: black;
+}
+
+.continer h2 a {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+button {
+    margin: auto;
+    width: 5rem;
+    margin-bottom: .5rem;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+form .text {
+    margin-top: .5rem;
+}
