@@ -296,6 +296,10 @@ span p {
     display: block;
 }
 
+input {
+    opacity: 0;
+}
+
 /* .abouts-satu .content-satu.show {
     display: block;
 }
