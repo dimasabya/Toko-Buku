@@ -13,15 +13,15 @@
 
 <body>
     <div class="continer">
-        <h2><a href="/Toko-Buku/">Toko Buku</a></h2>
+        <h2><a href="index.html">Toko Buku</a></h2>
         <hr>
         <form action="">
-            <p class="text">Email</p>
-            <input type="email" name="" id="email" placeholder="Email">
+            <p class="text">Username</p>
+            <input type="text" name="" id="username" placeholder="username">
             <p class="text">Password</p>
             <input type="password" name="" id="password" placeholder="Password">
             <p class="text"><input type="checkbox" name="" id="checkbox">Save</p>
-            <button>Login</button>
+            <button id="login" onclick="ambilData(event)">Login</button>
             <a href="#">Forgot Password?</a>
             <hr>
             <p class="text">Doyou have account? <a href="#" class="sign-btn">Sign Up</a></p>
@@ -33,12 +33,12 @@
         <form action="" class="signup-form">
             <p>Nama Lengkap</p>
             <input type="text" name="" id="Nama" placeholder="Nama Lengkap">
-            <p>Email</p>
-            <input type="email" name="" id="email-signup" placeholder="Email">
+            <p>Username</p>
+            <input type="text" name="" id="usernameSignup" placeholder="username">
             <p>Password</p>
-            <input type="password" name="" id="password placeholder=" Password">
+            <input type="password" name="" id="passwordSignup" placeholder="Password">
             <p><input type="checkbox" name="" id="checkbox-signup"> Syarat & Ketentuan</p>
-            <button>Kirim</button>
+            <button id="signup" onclick="simpanData()">Kirim</button>
         </form>
     </div>
 

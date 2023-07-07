@@ -31,32 +31,32 @@ const spanLima = document.querySelector(".content-lima");
 //   console.log("oke");
 // });
 
-document.querySelector(".check").addEventListener("click", function () {
-  span.classList.toggle("show");
-  console.log("oke");
-});
-document.querySelector(".check-dua").addEventListener("click", function () {
-  spanDua.classList.toggle("show");
-  console.log("oke");
-});
-document.querySelector(".check-tiga").addEventListener("click", function () {
-  spanTiga.classList.toggle("show");
-  console.log("oke");
-});
-document.querySelector(".check-empat").addEventListener("click", function () {
-  spanEmpat.classList.toggle("show");
-  console.log("oke");
-});
-document.querySelector(".check-lima").addEventListener("click", function () {
-  spanLima.classList.toggle("show");
-  console.log("oke");
-});
+// document.querySelector(".check").addEventListener("click", function () {
+//   span.classList.toggle("show");
+//   console.log("oke");
+// });
+// document.querySelector(".check-dua").addEventListener("click", function () {
+//   spanDua.classList.toggle("show");
+//   console.log("oke");
+// });
+// document.querySelector(".check-tiga").addEventListener("click", function () {
+//   spanTiga.classList.toggle("show");
+//   console.log("oke");
+// });
+// document.querySelector(".check-empat").addEventListener("click", function () {
+//   spanEmpat.classList.toggle("show");
+//   console.log("oke");
+// });
+// document.querySelector(".check-lima").addEventListener("click", function () {
+//   spanLima.classList.toggle("show");
+//   console.log("oke");
+// });
 
-function inp(arrow) {
-  document.querySelector(".check").addEventListener("click", function () {
-    i.classList.toggle(`${arrow}`);
-  });
-}
+// function inp(arrow) {
+//   document.querySelector(".check").addEventListener("click", function () {
+//     i.classList.toggle(`${arrow}`);
+//   });
+// }
 
 // function show(span) {
 //   document.querySelector(".check").addEventListener("click", function () {
@@ -65,3 +65,22 @@ function inp(arrow) {
 //     console.log("oke");
 //   });
 // }
+
+//  pengecekan sudah login
+
+const log = document.querySelector("#login");
+
+if (!localStorage.getItem("username")) {
+  log.innerHTML = "Masuk";
+} else {
+  log.innerHTML = "Keluar";
+}
+
+log.addEventListener("click", function () {
+  if (!localStorage.getItem("username")) {
+    log.href = "login.html";
+  } else {
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+  }
+});

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nama": "Auliyani Revalina Alinan",
+    "nim": 12220750,
+    "url": "assets/images/contact/aura.jpg"
+  },
+  {
+    "id": 2,
+    "nama": "Dimas Abdul Yasir",
+    "nim": 12220418,
+    "url": "assets/images/contact/dimas.jpg"
+  },
+  {
+    "id": 3,
+    "nama": "Putu Muhammad Zein",
+    "nim": 12220165,
+    "url": "assets/images/contact/putu.jpg"
+  },
+  {
+    "id": 4,
+    "nama": "Valentino Andrian",
+    "nim": 12221036,
+    "url": "assets/images/contact/valen.jpg"
+  }
+]

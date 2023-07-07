@@ -2,6 +2,7 @@
     --bg: #ECF2FF;
     --primary: #655DBB;
     --secondary: #BFACE2;
+    --populer: #F6FFA6
 }
 
 html {
@@ -24,6 +25,7 @@ body {
     font-size: 16px/28px;
     width: 100vmax;
     overflow-x: hidden;
+    box-sizing: border-box;
     /* height: 1000px; */
 }
 
@@ -141,7 +143,7 @@ body {
     z-index: 9999;
     background-color: var(--secondary);
     position: relative;
-    top: -2000px;
+    top: -500px;
     left: 0;
     right: 0;
     transition: .8s;
@@ -155,7 +157,7 @@ body {
 
 .kategory.slide {
     z-index: 1;
-    top: -350px;
+    top: 110px;
 }
 
 .sub-kategory ul {
@@ -191,126 +193,143 @@ body {
     clear: both;
 }
 
-/* *
+/**
  * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats. */
-
+ * Include this rule to trigger hasLayout and contain floats.
+ */
 .cf {
-    *zoom: 1;
+    zoom: 1;
 }
 
-/* about */
 
-.abouts .abouts-satu,
-.abouts .abouts-dua,
-.abouts .abouts-tiga,
-.abouts .abouts-empat,
-.abouts .abouts-lima {
+/* ------------------------- populer ----------------------------------------- */
+.buku {
+    /* background-color: var(--populer); */
+    text-align: center;
+    padding: .2rem;
     position: relative;
+    /* background-image: url('../assets/images/onepiece.png'); */
 }
 
-.title-about {
-    margin: 8rem 0 0 2rem;
+.data-buku {
+    width: 40%;
+    margin: .2rem auto;
+    padding: 1rem;
+    border: 5px solid wheat;
+    /* background-color: #E8AA42; */
+    /* background-image: url('../assets/images/onepiece.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.buku-border {
+    background-image: url('../wave.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #4F52FF;
+    margin: 1rem;
+    padding: 1rem 0;
+    background: linear-gradient(to right, #34C759, #4F52FF);
+}
+
+.books {
+    width: 100%;
+    padding: 1rem;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.books div {
+    border: 1px solid white;
+    /* padding: 1rem; */
+}
+
+.books div {
+    transition: transform .3s ease;
+}
+
+.books div:hover {
+    transform: scale(1.1);
+}
+
+.data-buku.books div>* {
+    margin: .5rem 0;
+}
+
+.data-buku.books div button {
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.books div button:hover {
+    background-color: var(--primary);
+}
+
+.img-all {
+    width: 100px;
+    height: 100px;
+}
+
+.buku h2 {
+    /* padding: 1rem 0 1rem 2rem; */
+    border-bottom: 1px solid red;
+    width: 19%;
+    /* background-color: #F8E8EE; */
+    border: 1px solid red;
+    margin: .5rem auto;
+}
+
+.buku .img-op {
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.title {
+    margin-bottom: .5rem;
+    text-decoration: underline;
+}
+
+.sub-title,
+.btn-buku {
+    margin-bottom: .5rem;
 }
 
 
-span {
-    display: block;
-    padding-top: .5rem;
-}
 
-span p {
-    margin: 0 0 0 2rem;
-}
-
-.abouts {
-    margin-top: 1rem;
-}
-
-.title-abouts {
-    margin: 0 0 .7rem 2rem;
-}
-
-.abouts h4 .down {
-    position: absolute;
+.buying {
+    width: 100vw;
+    background-color: whitesmoke;
+    /* position: absolute;
+    left: 0;
     top: 0;
+    right: 0;
+    bottom: 0; */
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 10px;
 }
 
-.abouts h4 .down-dua {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.buying .section-buy {
+    border-right: 1px solid blueviolet;
 }
 
-.abouts h4 .down-tiga {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+/* .buying .content-buy { */
+/* background-color: blu    e; */
+/* } */
+
+.remove {
+    display: none;
 }
 
-.abouts h4 .down-empat {
-    position: absolute;
-    top: 0;
-    right: 7rem;
-}
-
-.abouts h4 .down-lima {
-    position: absolute;
-    top: 0;
-    right: 7rem;
-}
-
-.abouts-satu input:checked~.down {
-    transform: rotateX(180deg);
-}
-
-.abouts-dua input:checked~.down-dua {
-    transform: rotateX(180deg);
-}
-
-.abouts-tiga input:checked~.down-tiga {
-    transform: rotateX(180deg);
-}
-
-.abouts-empat input:checked~.down-empat {
-    transform: rotateX(180deg);
-}
-
-.abouts-lima input:checked~.down-lima {
-    transform: rotateX(180deg);
-}
-
-.content-satu,
-.content-dua,
-.content-tiga,
-.content-empat,
-.content-lima {
-    display: block;
-}
-
-/* .content-satu.show,
-.content-dua.show,
-.content-tiga.show,
-.content-empat.show,
-.content-lima.show {
-    display: block;
-} */
-
-.transf {
-    opacity: 0;
-}
-
-/* .abouts-satu .content-satu.show {
-    display: block;
-}
-
-.abouts-dua .content-dua.show {
-    display: block;
-} */
 
 
-/*  */
-/*  */
 /* footer */
 
 .footer {

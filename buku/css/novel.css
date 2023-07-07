@@ -141,7 +141,7 @@ body {
     z-index: 9999;
     background-color: var(--secondary);
     position: relative;
-    top: -2000px;
+    top: -500px;
     left: 0;
     right: 0;
     transition: .8s;
@@ -155,7 +155,7 @@ body {
 
 .kategory.slide {
     z-index: 1;
-    top: -350px;
+    top: 110px;
 }
 
 .sub-kategory ul {
@@ -191,124 +191,50 @@ body {
     clear: both;
 }
 
-/* *
+/**
  * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats. */
-
+ * Include this rule to trigger hasLayout and contain floats.
+ */
 .cf {
     *zoom: 1;
 }
 
-/* about */
-
-.abouts .abouts-satu,
-.abouts .abouts-dua,
-.abouts .abouts-tiga,
-.abouts .abouts-empat,
-.abouts .abouts-lima {
-    position: relative;
-}
-
-.title-about {
-    margin: 8rem 0 0 2rem;
-}
-
-
-span {
-    display: block;
-    padding-top: .5rem;
-}
-
-span p {
-    margin: 0 0 0 2rem;
-}
-
-.abouts {
-    margin-top: 1rem;
-}
-
-.title-abouts {
-    margin: 0 0 .7rem 2rem;
-}
-
-.abouts h4 .down {
+/* --------------------------------- Novel ---------------------------------------------------- */
+.beli {
     position: absolute;
-    top: 0;
+    left: 25%;
+    top: 180px;
+    display: none;
+    /* background-color: var(--secondary); */
+    background: radial-gradient(circle at center, #ff7f50, #ff4f00, #d63333);
+    border: 1px solid red;
+    width: 50vw;
+    margin: 1rem auto;
+    text-align: center;
 }
 
-.abouts h4 .down-dua {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.beli h5 {
+    text-decoration: underline;
+    margin: .5rem 0;
 }
 
-.abouts h4 .down-tiga {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.beli form p {
+    margin: .5rem 0;
 }
 
-.abouts h4 .down-empat {
-    position: absolute;
-    top: 0;
-    right: 7rem;
-}
-
-.abouts h4 .down-lima {
-    position: absolute;
-    top: 0;
-    right: 7rem;
-}
-
-.abouts-satu input:checked~.down {
-    transform: rotateX(180deg);
-}
-
-.abouts-dua input:checked~.down-dua {
-    transform: rotateX(180deg);
-}
-
-.abouts-tiga input:checked~.down-tiga {
-    transform: rotateX(180deg);
-}
-
-.abouts-empat input:checked~.down-empat {
-    transform: rotateX(180deg);
-}
-
-.abouts-lima input:checked~.down-lima {
-    transform: rotateX(180deg);
-}
-
-.content-satu,
-.content-dua,
-.content-tiga,
-.content-empat,
-.content-lima {
+.keranjang {
     display: block;
 }
 
-/* .content-satu.show,
-.content-dua.show,
-.content-tiga.show,
-.content-empat.show,
-.content-lima.show {
-    display: block;
-} */
-
-.transf {
-    opacity: 0;
-}
-
-/* .abouts-satu .content-satu.show {
-    display: block;
-}
-
-.abouts-dua .content-dua.show {
-    display: block;
-} */
 
 
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
 /*  */
 /*  */
 /* footer */

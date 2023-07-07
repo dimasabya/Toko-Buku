@@ -2,6 +2,7 @@
     --bg: #ECF2FF;
     --primary: #655DBB;
     --secondary: #BFACE2;
+    --populer: #F6FFA6
 }
 
 html {
@@ -24,6 +25,7 @@ body {
     font-size: 16px/28px;
     width: 100vmax;
     overflow-x: hidden;
+    box-sizing: border-box;
     /* height: 1000px; */
 }
 
@@ -141,7 +143,7 @@ body {
     z-index: 9999;
     background-color: var(--secondary);
     position: relative;
-    top: -2000px;
+    top: -500px;
     left: 0;
     right: 0;
     transition: .8s;
@@ -155,7 +157,7 @@ body {
 
 .kategory.slide {
     z-index: 1;
-    top: -350px;
+    top: 110px;
 }
 
 .sub-kategory ul {
@@ -191,126 +193,86 @@ body {
     clear: both;
 }
 
-/* *
+/**
  * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats. */
-
+ * Include this rule to trigger hasLayout and contain floats.
+ */
 .cf {
     *zoom: 1;
 }
 
-/* about */
+/* ------------------- service -------------------------------- */
 
-.abouts .abouts-satu,
-.abouts .abouts-dua,
-.abouts .abouts-tiga,
-.abouts .abouts-empat,
-.abouts .abouts-lima {
-    position: relative;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.title-about {
-    margin: 8rem 0 0 2rem;
+h1 {
+    margin: 0;
 }
 
-
-span {
-    display: block;
-    padding-top: .5rem;
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    box-sizing: border-box;
+    gap: 20px;
 }
 
-span p {
-    margin: 0 0 0 2rem;
-}
-
-.abouts {
+section {
     margin-top: 1rem;
+    text-align: center;
 }
 
-.title-abouts {
-    margin: 0 0 .7rem 2rem;
+section img {
+    width: 100px;
+    height: 100px;
 }
 
-.abouts h4 .down {
-    position: absolute;
-    top: 0;
+main .pelayanan {
+    background-color: #655DBB;
 }
 
-.abouts h4 .down-dua {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+main .rate {
+    background-color: #BFACE2;
 }
 
-.abouts h4 .down-tiga {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+main .kualitas {
+    background-color: aqua;
 }
 
-.abouts h4 .down-empat {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.rate,
+.pelayanan,
+.kualitas {
+    padding: .5rem;
 }
 
-.abouts h4 .down-lima {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.pelayanan img,
+.kualitas img {
+    margin: .5rem 0;
 }
 
-.abouts-satu input:checked~.down {
-    transform: rotateX(180deg);
+.rate .bintang {
+    margin: .5rem 0;
 }
 
-.abouts-dua input:checked~.down-dua {
-    transform: rotateX(180deg);
+.colorStar {
+    color: yellow;
 }
 
-.abouts-tiga input:checked~.down-tiga {
-    transform: rotateX(180deg);
+h2 {
+    color: #333;
 }
 
-.abouts-empat input:checked~.down-empat {
-    transform: rotateX(180deg);
-}
-
-.abouts-lima input:checked~.down-lima {
-    transform: rotateX(180deg);
-}
-
-.content-satu,
-.content-dua,
-.content-tiga,
-.content-empat,
-.content-lima {
-    display: block;
-}
-
-/* .content-satu.show,
-.content-dua.show,
-.content-tiga.show,
-.content-empat.show,
-.content-lima.show {
-    display: block;
-} */
-
-.transf {
-    opacity: 0;
-}
-
-/* .abouts-satu .content-satu.show {
-    display: block;
-}
-
-.abouts-dua .content-dua.show {
-    display: block;
-} */
 
 
-/*  */
-/*  */
+
+
+
 /* footer */
 
 .footer {

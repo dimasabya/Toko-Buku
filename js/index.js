@@ -3,6 +3,7 @@ const drop_cat = document.querySelector(".kategory ");
 
 document.querySelector(".drop-check").onclick = () => {
   drop_cat.classList.toggle("slide");
+  drop_cat.scrollIntoView({ behavior: "smooth" });
 };
 
 // drop.addEventListener("click", function () {
@@ -35,3 +36,22 @@ for (let i = 1; i < 2; i++) {
     break;
   }
 }
+
+//  pengecekan sudah login
+
+const log = document.querySelector("#login");
+
+if (!localStorage.getItem("username")) {
+  log.innerHTML = "Masuk";
+} else {
+  log.innerHTML = "Keluar";
+}
+
+log.addEventListener("click", function () {
+  if (!localStorage.getItem("username")) {
+    log.href = "login.html";
+  } else {
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+  }
+});

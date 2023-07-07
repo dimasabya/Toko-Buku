@@ -2,6 +2,7 @@
     --bg: #ECF2FF;
     --primary: #655DBB;
     --secondary: #BFACE2;
+    --populer: #F6FFA6
 }
 
 html {
@@ -24,6 +25,7 @@ body {
     font-size: 16px/28px;
     width: 100vmax;
     overflow-x: hidden;
+    box-sizing: border-box;
     /* height: 1000px; */
 }
 
@@ -141,7 +143,7 @@ body {
     z-index: 9999;
     background-color: var(--secondary);
     position: relative;
-    top: -2000px;
+    top: -500px;
     left: 0;
     right: 0;
     transition: .8s;
@@ -155,7 +157,7 @@ body {
 
 .kategory.slide {
     z-index: 1;
-    top: -350px;
+    top: 110px;
 }
 
 .sub-kategory ul {
@@ -191,126 +193,145 @@ body {
     clear: both;
 }
 
-/* *
+/**
  * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats. */
-
+ * Include this rule to trigger hasLayout and contain floats.
+ */
 .cf {
     *zoom: 1;
 }
 
-/* about */
+/* ---------------------------------- contact -------------------------------------------- */
 
-.abouts .abouts-satu,
-.abouts .abouts-dua,
-.abouts .abouts-tiga,
-.abouts .abouts-empat,
-.abouts .abouts-lima {
-    position: relative;
-}
-
-.title-about {
-    margin: 8rem 0 0 2rem;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
 }
 
 
-span {
+.contact {
+    /* max-width: 500px; */
+    background-color: #29477b;
+    width: 300px;
+    border: 3px solid black;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: .5rem;
+    color: white;
+    transition: translateY 5s ease-in;
+}
+
+.contact:hover {
+    transform: translateY(-10px);
+    box-shadow: 14px 11px 10px black;
+}
+
+.content-satu {
+    text-align: center;
+    margin-bottom: 1rem;
+    background: radial-gradient(#63E5C5, #14366F);
+    padding: .5rem;
+}
+
+.content-satu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.content-dua {
+    line-height: 1.5rem;
+}
+
+.content-tiga a {
+    border: 1px solid black;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: #cccccc;
+    border-radius: 100%;
+    margin: auto;
+}
+
+
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
-    padding-top: .5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-span p {
-    margin: 0 0 0 2rem;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    resize: none;
 }
 
-.abouts {
-    margin-top: 1rem;
+.form-group button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
 }
 
-.title-abouts {
-    margin: 0 0 .7rem 2rem;
+.form-group button:hover {
+    background-color: #45a049;
 }
 
-.abouts h4 .down {
-    position: absolute;
-    top: 0;
+.form-group::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.abouts h4 .down-dua {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+
+.comment-box {
+    background-color: #bbb;
+    padding: 10px;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 360px;
+    text-align: center;
 }
 
-.abouts h4 .down-tiga {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.comment-box:nth-child(odd) {
+    background-color: #45a049;
+    margin-left: 2rem;
 }
 
-.abouts h4 .down-empat {
-    position: absolute;
-    top: 0;
-    right: 7rem;
+.comment-content {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.abouts h4 .down-lima {
-    position: absolute;
-    top: 0;
-    right: 7rem;
-}
-
-.abouts-satu input:checked~.down {
-    transform: rotateX(180deg);
-}
-
-.abouts-dua input:checked~.down-dua {
-    transform: rotateX(180deg);
-}
-
-.abouts-tiga input:checked~.down-tiga {
-    transform: rotateX(180deg);
-}
-
-.abouts-empat input:checked~.down-empat {
-    transform: rotateX(180deg);
-}
-
-.abouts-lima input:checked~.down-lima {
-    transform: rotateX(180deg);
-}
-
-.content-satu,
-.content-dua,
-.content-tiga,
-.content-empat,
-.content-lima {
-    display: block;
-}
-
-/* .content-satu.show,
-.content-dua.show,
-.content-tiga.show,
-.content-empat.show,
-.content-lima.show {
-    display: block;
-} */
-
-.transf {
-    opacity: 0;
-}
-
-/* .abouts-satu .content-satu.show {
-    display: block;
-}
-
-.abouts-dua .content-dua.show {
-    display: block;
-} */
 
 
-/*  */
-/*  */
+
+
+
+
+
+
+
 /* footer */
 
 .footer {
